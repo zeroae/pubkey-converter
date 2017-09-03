@@ -9,6 +9,6 @@ RUN apk add --no-cache \
     perl-mime-base64 \
     perl-parse-recdescent
 
-COPY pubkey-converter.pl pubkey-converter.pl
+COPY pubkey-converter.pl /usr/bin/pubkey-converter
 
-#ENTRYPOINT /pubkey-converter.pl
+ENTRYPOINT pubkey-converter
