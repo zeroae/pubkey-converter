@@ -11,4 +11,4 @@ RUN apk add --no-cache \
 
 COPY pubkey-converter.pl /usr/bin/pubkey-converter
 
-ENTRYPOINT pubkey-converter
+ENTRYPOINT [ "pubkey-converter" ]
